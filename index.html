@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors Robotic Hand</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#111827,#1e1b4b);
+color:white;
+font-family:'Inter',sans-serif;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-family:'Orbitron',sans-serif;
+font-size:55px;
+background:linear-gradient(90deg,#00f5ff,#7c3aed);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+header p{
+margin-top:20px;
+font-size:20px;
+max-width:800px;
+opacity:0.9;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+background:linear-gradient(90deg,#00f5ff,#7c3aed);
+border:none;
+border-radius:40px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #7c3aed;
+}
+
+section{
+padding:100px 10%;
+}
+
+h2{
+font-family:'Orbitron',sans-serif;
+font-size:38px;
+margin-bottom:30px;
+color:#00f5ff;
+}
+
+.toggle-btn{
+display:block;
+width:100%;
+text-align:left;
+padding:15px;
+margin-bottom:10px;
+background:rgba(255,255,255,0.05);
+border:none;
+border-radius:15px;
+color:white;
+cursor:pointer;
+transition:0.3s;
+font-weight:600;
+}
+
+.toggle-btn:hover{
+background:rgba(124,58,237,0.3);
+}
+
+.toggle-content{
+max-height:0;
+overflow:hidden;
+transition:0.4s ease;
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+padding:0 15px;
+margin-bottom:15px;
+}
+
+.toggle-content p{
+padding:15px 0;
+line-height:1.6;
+}
+
+.prototype-img, video{
+width:100%;
+border-radius:20px;
+margin-top:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#0f172a;
+margin-top:100px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:35px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Rock Paper Scissors Robotic Hand</h1>
+<p>
+An intelligent Arduino-based robotic system that plays Rock Paper Scissors using programmable servo motors, mechanical engineering principles, and embedded systems.
+</p>
+<a href="#about"><button class="btn">Explore Project</button></a>
+</header>
+
+<section id="about">
+<h2>Project Description</h2>
+
+<button class="toggle-btn">What is this project?</button>
+<div class="toggle-content">
+<p>
+This project is a robotic hand powered by Arduino that can automatically play Rock, Paper, Scissors. It uses servo motors to simulate finger movements and mechanical joints to replicate real hand gestures.
+</p>
+</div>
+
+<button class="toggle-btn">Why is it important?</button>
+<div class="toggle-content">
+<p>
+It demonstrates robotics, automation, embedded systems programming, and mechanical design in a practical educational model suitable for STEM learning.
+</p>
+</div>
+
+<button class="toggle-btn">What problem does it solve?</button>
+<div class="toggle-content">
+<p>
+Many students learn robotics only theoretically. This project creates a real interactive robotic prototype that shows how electronics and mechanics work together.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Functional Requirements</h2>
+
+<button class="toggle-btn">Rock Gesture</button>
+<div class="toggle-content">
+<p>The robotic hand closes all fingers to simulate the Rock gesture.</p>
+</div>
+
+<button class="toggle-btn">Paper Gesture</button>
+<div class="toggle-content">
+<p>The robotic hand opens all fingers fully to simulate Paper.</p>
+</div>
+
+<button class="toggle-btn">Scissors Gesture</button>
+<div class="toggle-content">
+<p>The robotic hand extends two fingers while closing the others to simulate Scissors.</p>
+</div>
+
+<button class="toggle-btn">Sound Feedback</button>
+<div class="toggle-content">
+<p>The built-in buzzer produces sound effects during gesture activation.</p>
+</div>
+</section>
+
+<section>
+<h2>Prototype</h2>
+
+
+
+<h3 style="margin-top:40px;">Video Demonstration</h3>
+
+<video controls>
+<source src="demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<p style="margin-top:20px;">
+The demonstration video shows real-time robotic movements and includes mechanical sound feedback from the buzzer.
+</p>
+</section>
+
+<section>
+<h2>Future Improvements</h2>
+
+<button class="toggle-btn">Bluetooth Control</button>
+<div class="toggle-content">
+<p>Allow wireless control using smartphone or computer connection.</p>
+</div>
+
+<button class="toggle-btn">AI Decision System</button>
+<div class="toggle-content">
+<p>Integrate artificial intelligence to randomly or strategically choose gestures.</p>
+</div>
+
+<button class="toggle-btn">Mobile Application</button>
+<div class="toggle-content">
+<p>Develop a mobile app interface to control and monitor the robotic hand.</p>
+</div>
+
+<button class="toggle-btn">Pressure Sensors</button>
+<div class="toggle-content">
+<p>Add sensors to detect force and simulate real grip strength.</p>
+</div>
+
+<button class="toggle-btn">Full Arm Extension</button>
+<div class="toggle-content">
+<p>Expand the project to include wrist and forearm movement.</p>
+</div>
+</section>
+
+<footer>
+© 2026 Rock Paper Scissors Robotic Hand Project
+</footer>
+
+<script>
+const buttons=document.querySelectorAll(".toggle-btn");
+
+buttons.forEach(btn=>{
+btn.addEventListener("click",()=>{
+const content=btn.nextElementSibling;
+if(content.style.maxHeight){
+content.style.maxHeight=null;
+}else{
+content.style.maxHeight=content.scrollHeight+"px";
+}
+});
+});
+</script>
+
+</body>
+</html>
